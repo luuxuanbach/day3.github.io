@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+            <!-- Latest compiled and minified CSS -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+            <!-- jQuery library -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+            <!-- Popper JS -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+            <!-- Latest compiled JavaScript -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+            <!-- Load font awesome icons -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<style>
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 2000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+</style>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+
+</head>
+
+  <body style="background-color: #1C1C1C;">
+  <!-- My Navbar code starts here -->
+
+<nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="coding 3.html">
+  <img src="coding images\Scaled_and_Icy_Logo.png" style="width: 70px">  
+  </a>
+  
+  <!-- Links -->
+  <!-- I am giving margin styling for my links -->
+  <!-- I want my links to be on the right side of my navbar  -->
+  <ul class="navbar-nav mr-auto" style="padding-left: 20px; font-size: 24px;">
+    <li class="nav-item">
+      <a  class="nav-link" href="about us.html">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="tour.html">Tour</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="merch.html">Merch</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="album.html">Photoshoot</a>
+    </li>
+  </ul>
+
+
+
+ <ul class="navbar-nav" style="padding-right: 30px; font-size: 24px;">
+       <li class="nav-item">
+      <a class="nav-link" href="https://www.youtube.com/channel/UCBQZwaNPFfJ1gZ1fLZpAEGw">Youtube</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="https://www.instagram.com/twentyonepilots/">Instagram</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="https://twitter.com/twentyonepilots">Twitter</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="https://www.facebook.com/twentyonepilots">Facebook</a>
+    </li>
+  </ul>
+</nav>
+
+<body>
+
+ <section>
+   <br><br><br><br>
+
+   <h1 style="text-align: center; font-family: roboto"; > <b style="color: white; font-size:24px"> Bandito Tour</b></h1> 
+<div class="slideshow-container">
+  <div class="mySlides1">
+    <img src="photoshoot\4.png" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="photoshoot\3.png" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="photoshoot\1.png" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+<br> <br> 
+<h1 style="text-align: center; font-family: roboto"; > <b style="color: white; font-size:24px"> Scaled and Icy Tour</b></h1> 
+<div class="slideshow-container">
+  <div class="mySlides2">
+    <img src="photoshoot\5.png" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="photoshoot\6.png" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="photoshoot\7.png" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="photoshoot\8.png" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="photoshoot\9.png" style="width:100%">
+  </div>
+
+
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+</div>
+
+<script>
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+
+<br>
+
+<div class="row">
+  <div class="column">
+    <img src="photoshoot\1.png" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="photoshoot\2.png" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="photoshoot\3.png" alt="Mountains" style="width:100%">
+  </div>
+   <div class="column">
+    <img src="photoshoot\4.png" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="photoshoot\5.png" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="photoshoot\6.png" alt="Mountains" style="width:100%">
+  </div>
+   <div class="column">
+    <img src="photoshoot\7.png" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="photoshoot\8.png" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="photoshoot\9.png" alt="Mountains" style="width:100%">
+  </div>
+</div>
+
+    <img src="photoshoot\10.png" alt="Mountains" style="width:100%">
+<br><br>
+<h1 style="text-align: center; font-family: roboto; font-size:24px "; > <b style="color: white;"> Our newest album is OUT NOW</b></h1> 
+<br><br><br>
+
+<body>
+
+<!--footer-->
+<style>
+.footer {
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #FFEFD5;
+   color: black;
+   text-align: center;
+   padding-top: 50px;
+   padding-bottom: 50px;
+}
+</style>
+
+
+</head>
+<body>
+
+
+<div class="footer">
+  <p style="font-family: roboto; font-size: 20px;"> © 2021 FUELED BY RAMEN And Twenty One Pilots</p>
+
+  <style type="text/css">
+    
+  
+
+/* Style the icon bar links */
+            .icon-bar a {
+                display: inline-block;
+                text-align: center;
+                padding: 18px;
+                transition: all 0.3s ease;
+                color: white;
+                font-size: 10px;
+                border-radius: 100%;
+                width: 50px;
+                height: 50px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: black;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.instagram {
+  background: #bb0000;
+  color: white;
+}
+
+
+  </style>
+
+  <!-- The social media icon bar -->
+<div class="icon-bar">
+  <a href="https://www.facebook.com/twentyonepilots" class="facebook"><i class="fa fa-facebook"></i></a>
+  <a href="https://twitter.com/twentyonepilots" class="twitter"><i class="fa fa-twitter"></i></a>
+  <a href="https://www.youtube.com/channel/UCBQZwaNPFfJ1gZ1fLZpAEGw" class="youtube"><i class="fa fa-youtube"></i></a>
+  <a href="https://www.instagram.com/p/CQRJFWLBv1M/" class="instagram"><i class="fa fa-instagram"></i></a>
+</div>
+</div>
